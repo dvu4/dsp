@@ -151,6 +151,30 @@ resp = nsfg.ReadFemResp()
 ```
 
 
+***Create a Pmf object***
+```
+pmf = thinkstats2.Pmf(resp.numkdhh, label='numkdhh')
+```
+
+***Use the NSFG respondent variable numkdhh to construct the actual distribution for the number of children under 18 in the respondents' households***
+```
+thinkplot.Pmf(pmf)
+thinkplot.Config(xlabel='Number of children', ylabel='PMF')
+```
+
+***This function computes the biased PMF.***
+```
+def BiasPmf(pmf, label):
+    new_pmf = pmf.Copy(label=label)
+    
+    for x, p in pmf.Items():
+        new_pmf.Mult(x, x)
+        
+    new_pmf.Normalize()
+    return new_pmf
+```
+
+
 
 
 
