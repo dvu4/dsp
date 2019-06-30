@@ -116,7 +116,7 @@ P[identical twins | brother twin] = P[identical twins & brother twin] \over {P[b
 ### Q6. Bayesian &amp; Frequentist Comparison  
 How do frequentist and Bayesian statistics compare?
 
- $\sqrt{3x-1}+(1+x)^2$ 
+ $`\sqrt{3x-1}+(1+x)^2`$ 
 
 Bayesian | Frequentist
 ------------ | -------------
