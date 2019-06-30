@@ -98,7 +98,6 @@ Elvis Presley had a twin brother who died at birth.  What is the probability tha
 ***Calculate the unconditional probabilities***
 
 ```math
-
 P[identical twins & brother twin] = P[identical twins] * P[brother twin | identical twins] = 1/300 * 1/2 
 ```
 
@@ -111,8 +110,8 @@ P[brother twin] = P[identical twins & brother twin]  +  P[fraternal twins & brot
 ```
 
 ```math
-P[identical twins | brother twin] = P[identical twins & brother twin] \over {P[brother twin]}  
-= {1/600} \over { 1/600 + 1/500} = 5/11
+P[identical twins | brother twin] = P[identical twins & brother twin] / {P[brother twin]}  
+= (1/600) / ( 1/600 + 1/500) = 5/11
 ```
 
 
