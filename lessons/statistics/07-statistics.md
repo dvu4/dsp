@@ -120,22 +120,11 @@ P[identical twins | brother twin] = P[identical twins & brother twin] / P[brothe
 ### Q6. Bayesian &amp; Frequentist Comparison  
 How do frequentist and Bayesian statistics compare?
 
-$x<em>{i} + y</em>{i}$
-
-$P(D \mid H)$ 
-$P(D \given H)$ 
-
-
-Hi 
-$`z = x + y`$.
-
-
-
 
 Bayesian | Frequentist
 ------------ | -------------
-uses probability for both hypotheses `H` and data `D` (prior `P(H)` and posterior `P(H|D)` | never uses the probability of a hypothesis
-depends on the prior and likelihood of observed data | depends on the likelihood ```$P(D|H)``` for both observed and unobserved data
+uses probability for both hypotheses `H` and data `D` (prior `P(H)` and posterior `P(H \mid D)` | never uses the probability of a hypothesis
+depends on the prior and likelihood of observed data | depends on the likelihood ```$P(D \given H)``` for both observed and unobserved data
 requires  one to know or construct a 'subjective prior' | does not require a prior
 may be computationally intensive due to integration over many parameters  | tends to less computationally intensive
 choice of the data model + prior distribution + objectivity + data + endless argument about one thing | choice of the data model + sample space and how repetitions of the experiment are envisioned, choice of stop rule. 1-tailed vs 2-tailed tests, multiplicity adjustments + objectivity + data + endless argument about everything
