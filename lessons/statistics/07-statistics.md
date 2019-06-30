@@ -95,19 +95,22 @@ Therefore, out of 3000 births, 5 out of 11 sets of boy-boy twins would be identi
 
 Calculate the unconditional probabilities
 
+
+
+
+```math
+
 P[identical twins & brother twin] = P[identical twins] * P[brother twin | identical twins] = 1/300 * 1/2 
 
 P[fraternal twins & brother twin] = P[fraternal twins] * P[brother twin | identical twins] = 1/125 * 1/4
 
 P[brother twin] = P[identical twins & brother twin]  +  P[fraternal twins & brother twin] = 1/600 + 1/500
 
-
-```math
-P[identical twins | brother twin] = P[identical twins & brother twin] \over {P[brother twin]}  
-= {1/600} \over { 1/600 + 1/500} = 5/11
+P[identical twins | brother twin] &= P[identical twins & brother twin] \over {P[brother twin]}  
+&= {1/600} \over { 1/600 + 1/500} = 5/11
 ```
 
-$$P[identical twins | brother twin] = P[identical twins & brother twin] \over {P[brother twin]}  = {1/600} \over { 1/600 + 1/500} = 5/11$$
+
 
 ---
 
