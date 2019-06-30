@@ -286,6 +286,7 @@ cm2 = f2/0.0328 + i2/0.3937
 cm1, cm2
 ```
 
+`>> 177.8390751903455, 185.46683434830283`
 
 ***It can also evaluate its CDF. How many people are below the 5'10" and 6'1"***
 ```
