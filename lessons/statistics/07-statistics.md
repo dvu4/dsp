@@ -253,6 +253,56 @@ thinkplot.Config(xlabel='Random variate', ylabel='CDF')
 This is a classic example of hypothesis testing using the normal distribution.  The effect size used here is the Z-statistic. 
 
 
+***Import library***
+```
+from __future__ import print_function, division
+%matplotlib inline
+import numpy as np
+scipy.stats as stats
+```
+
+***Create normal distribution***
+```
+mu = 178
+sigma = 7.7
+dist = scipy.stats.norm(loc=mu, scale=sigma)
+print(type(dist))
+print('the mean is {} and standard deviation is {}'.format(dist.mean(), dist.std()))
+```
+
+
+***Convert feet to centimeter: *** `cm = feet/0.0328 + inch/0.3937`
+```
+# 5'10"
+f1 = 5
+i1 = 10
+cm1 = f1/0.0328 + i1/0.3937
+
+# 6'1"
+f2 = 6
+i2 = 1
+cm2 = f2/0.0328 + i2/0.3937
+
+cm1, cm2
+```
+
+
+***It can also evaluate its CDF. How many people are below the 5'10" and 6'1"***
+```
+low = dist.cdf(cm1)
+high = dist.cdf(cm2)
+range_height = high - low
+high, low , range_height
+```
+
+0.48963902786483265, 0.8317337108107857, 0.3420946829459531
+
+- ***The percentage of the U.S. male population is below  5'10":** `48.96%`
+- ***The percentage of the U.S. male population is below 6'1":** `83.17%`
+
+
+- ***The percentage of the U.S. male population is in this range 5'10" and 6'1":** `34.2%`
+
 
 ### Q5. Bayesian (Elvis Presley twin) 
 
