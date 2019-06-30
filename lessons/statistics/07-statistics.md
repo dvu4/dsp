@@ -69,6 +69,65 @@ Cohen's D is an example of effect size.  Other examples of effect size are:  cor
 
 You will see effect size again and again in results of algorithms that are run in data science.  For instance, in the bootcamp, when you run a regression analysis, you will recognize the t-statistic as an example of effect size.
 
+
+```
+from __future__ import print_function, division
+%matplotlib inline
+import numpy as np
+import nsfg
+import first
+import thinkstats2
+import thinkplot
+```
+
+***Load the data from the pregnancy file and select the records for live births.***
+```
+preg = nsfg.ReadFemPreg()
+live = preg[preg.outcome == 1]
+```
+
+***From live births, we can selec first babies and others using birthord***
+```
+firsts = live[live.birthord == 1]
+others = live[live.birthord != 1]
+```
+
+***This functon computes the Cohen'd effect size, which is the difference in means expressed in number of standard deviations***
+```
+def CohenEffectSize(group1, group2):
+    """Computes Cohen's effect size for two groups.
+    
+    group1: Series or DataFrame
+    group2: Series or DataFrame
+    
+    returns: float if the arguments are Series;
+             Series if the arguments are DataFrames
+    """
+    diff = group1.mean() - group2.mean()
+
+    var1 = group1.var()
+    var2 = group2.var()
+    n1, n2 = len(group1), len(group2)
+
+    pooled_var = (n1 * var1 + n2 * var2) / (n1 + n2)
+    d = diff / np.sqrt(pooled_var)
+    return d
+```
+
+- Using the variable totalwgt_lb, investigate whether first babies are lighter or heavier than others.
+```
+firsts.totalwgt_lb.mean(), others.totalwgt_lb.mean()
+```
+
+- Compute the Cohen’s effect size to quantify the difference in weights between first babies and others.
+```
+CohenEffectSize(firsts.totalwgt_lb, others.totalwgt_lb)
+```
+
+***Cohen’s d to quantify the difference between the groups : ***`-0.08867292707260174`
+
+
+
 ### Q2. [Think Stats Chapter 3 Exercise 1](3-1-actual_biased.md) (actual vs. biased)
 This problem presents a robust example of actual vs biased data.  As a data scientist, it will be important to examine not only the data that is available, but also the data that may be missing but highly relevant.  You will see how the absence of this relevant data will bias a dataset, its distribution, and ultimately, its statistical interpretation.
 
