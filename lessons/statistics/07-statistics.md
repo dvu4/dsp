@@ -91,7 +91,7 @@ Elvis Presley had a twin brother who died at birth.  What is the probability tha
 
 - In 3000 births, we have 3000 * (1/125) = 24 sets of fraternal twins. 1/4 would be girl-girl, 1/4 would be girl-boy, 1/4 would be boy-girl and 1/4 would be boy-boy. So we have 24 * (1/4) = 6 sets of boy-boy fraternal twins.
 
-- Therefore, out of 3000 births, 5 out of 11 sets of boy-boy twins would be identical. So the probability Elvis was an identical twin is 5/1
+- Therefore, out of 3000 births, 5 out of 11 sets of boy-boy twins would be identical. So the probability Elvis was an identical twin is 5/11
 
 
 
