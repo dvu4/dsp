@@ -120,14 +120,14 @@ def CohenEffectSize(group1, group2):
 firsts.totalwgt_lb.mean(), others.totalwgt_lb.mean()
 ```
 
-```(7.201094430437772, 7.325855614973262)```
+- ***The mean total weight for first babies and others:***```(7.201094430437772, 7.325855614973262)```
 
 ***Compute the Cohen’s effect size to quantify the difference in weights between first babies and others.***
 ```
 CohenEffectSize(firsts.totalwgt_lb, others.totalwgt_lb)
 ```
 
-***Cohen’s d to quantify the difference between the groups:*** `-0.08867292707260174`
+- ***Cohen’s d to quantify the difference between the groups:*** `-0.08867292707260174`
 
 
 
