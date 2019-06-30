@@ -116,11 +116,7 @@ P[identical twins | brother twin] = P[identical twins & brother twin] \over {P[b
 ### Q6. Bayesian &amp; Frequentist Comparison  
 How do frequentist and Bayesian statistics compare?
 
-<div class="math">
-\begin{equation}
-  \int_0^\infty \frac{x^3}{e^x-1}\,dx = \frac{\pi^4}{15}  
-\end{equation}
-</div>
+$P(\mathbb{H})$
 
 Bayesian | Frequentist
 ------------ | -------------
