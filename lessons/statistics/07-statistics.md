@@ -118,11 +118,13 @@ How do frequentist and Bayesian statistics compare?
 boy 
 
 
-
+- <img src="https://latex.codecogs.com/gif.latex?O_t=\text { Onset event at time bin } t " /> 
+- <img src="https://latex.codecogs.com/gif.latex?s=\text { sensor reading }  " /> 
+- <img src="https://latex.codecogs.com/gif.latex?P(s | O_t )=\text { Probability of a sensor reading value when sleep onset is observed at a time bin } t " />
 
 Bayesian | Frequentist
 ------------ | -------------
-uses probability for both hypotheses $$\mathbb{H} $$ and data $` \mathbb{D} `$ (prior $`P(\mathbb{H})`$ and posterior $`P(\mathbb{H} | \mathbb{D})`$) | never uses the probability of a hypothesis
+uses probability for both hypotheses $$\mathbb{H} $$ and data $`\mathbb{D}`$ (prior $`P(\mathbb{H})`$ and posterior $`P(\mathbb{H} | \mathbb{D})`$) | never uses the probability of a hypothesis
 depends on the prior and likelihood of observed data | depends on the likelihood $`P(\mathbb{D} | \mathbb{H})`$ for both observed and unobserved data
 requires  one to know or construct a 'subjective prior' | does not require a prior
 may be computationally intensive due to integration over many parameters  | tends to less computationally intensive
