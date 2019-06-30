@@ -125,6 +125,16 @@ $x<em>{i} + y</em>{i}$
 $P(D \mid H)$ 
 $P(D \given H)$ 
 
+
+Hi `$z = x + y$`.
+
+`$$a^2 + b^2 = c^2$$`
+
+`$$\begin{vmatrix}a & b\\
+c & d
+\end{vmatrix}=ad-bc$$`
+
+
 Bayesian | Frequentist
 ------------ | -------------
 uses probability for both hypotheses `H` and data `D` (prior `P(H)` and posterior `P(H|D)` | never uses the probability of a hypothesis
