@@ -161,6 +161,7 @@ pmf = thinkstats2.Pmf(resp.numkdhh, label='numkdhh')
 thinkplot.Pmf(pmf)
 thinkplot.Config(xlabel='Number of children', ylabel='PMF')
 ```
+<img src='image/pmf.png'>
 
 ***This function computes the biased PMF.***
 ```
@@ -188,6 +189,7 @@ thinkplot.PrePlot(2)
 thinkplot.Pmfs([pmf, biased])
 thinkplot.Config(xlabel='Number of children', ylabel='PMF')
 ```
+<img src='image/biased.png'>
 
 
 ***Compute their means***
