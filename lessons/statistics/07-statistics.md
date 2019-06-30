@@ -120,6 +120,7 @@ boy
 ```math
 \mathbb{D}
 ```
+$\mathbb{Z}$
 
 Bayesian | Frequentist
 ------------ | -------------
