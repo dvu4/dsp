@@ -270,8 +270,8 @@ print(type(dist))
 print('the mean is {} and standard deviation is {}'.format(dist.mean(), dist.std()))
 ```
 
-`>> <class 'scipy.stats._distn_infrastructure.rv_frozen'>
->> the mean is 178.0 and standard deviation is 7.7`
+`>> <class 'scipy.stats._distn_infrastructure.rv_frozen'>`
+`>> the mean is 178.0 and standard deviation is 7.7`
 
 ***Convert feet to centimeter:*** `cm = feet/0.0328 + inch/0.3937`
 ```
