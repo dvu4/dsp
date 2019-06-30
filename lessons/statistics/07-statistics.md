@@ -70,6 +70,7 @@ Cohen's D is an example of effect size.  Other examples of effect size are:  cor
 You will see effect size again and again in results of algorithms that are run in data science.  For instance, in the bootcamp, when you run a regression analysis, you will recognize the t-statistic as an example of effect size.
 
 
+***Import library***
 ```
 from __future__ import print_function, division
 %matplotlib inline
@@ -114,17 +115,19 @@ def CohenEffectSize(group1, group2):
     return d
 ```
 
-- Using the variable totalwgt_lb, investigate whether first babies are lighter or heavier than others.
+***Use the variable totalwgt_lb, investigate whether first babies are lighter or heavier than others.***
 ```
 firsts.totalwgt_lb.mean(), others.totalwgt_lb.mean()
 ```
 
-- Compute the Cohen’s effect size to quantify the difference in weights between first babies and others.
+```(7.201094430437772, 7.325855614973262)```
+
+***Compute the Cohen’s effect size to quantify the difference in weights between first babies and others.***
 ```
 CohenEffectSize(firsts.totalwgt_lb, others.totalwgt_lb)
 ```
 
-***Cohen’s d to quantify the difference between the groups : ***`-0.08867292707260174`
+***Cohen’s d to quantify the difference between the groups:*** `-0.08867292707260174`
 
 
 
