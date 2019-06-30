@@ -122,6 +122,8 @@ boy
 ```
 $\mathbb{Z}$
 
+$(\mathbf A \mathbf B)^T =  \mathbf B^T \mathbf A^T$
+
 Bayesian | Frequentist
 ------------ | -------------
 uses probability for both hypotheses $$\mathbb{H} $$ and data $` \mathbb{D} `$ (prior $`P(\mathbb{H})`$ and posterior $`P(\mathbb{H} | \mathbb{D})`$) | never uses the probability of a hypothesis
