@@ -134,6 +134,72 @@ CohenEffectSize(firsts.totalwgt_lb, others.totalwgt_lb)
 ### Q2. [Think Stats Chapter 3 Exercise 1](3-1-actual_biased.md) (actual vs. biased)
 This problem presents a robust example of actual vs biased data.  As a data scientist, it will be important to examine not only the data that is available, but also the data that may be missing but highly relevant.  You will see how the absence of this relevant data will bias a dataset, its distribution, and ultimately, its statistical interpretation.
 
+***Import library***
+```
+from __future__ import print_function, division
+%matplotlib inline
+import numpy as np
+import nsfg
+import first
+import thinkstats2
+import thinkplot
+```
+
+***Load the NSFG respondent dataset***
+```
+resp = nsfg.ReadFemResp()
+```
+
+***Create a Pmf object.***
+```
+pmf = thinkstats2.Pmf(resp.numkdhh, label='numkdhh')
+```
+
+***Use the NSFG respondent variable numkdhh to construct the actual distribution for the number of children under 18 in the respondents' households.***
+```
+thinkplot.Pmf(pmf)
+thinkplot.Config(xlabel='Number of children', ylabel='PMF')
+```
+
+
+***This function computes the biased PMF.***
+```
+def BiasPmf(pmf, label):
+    new_pmf = pmf.Copy(label=label)
+    
+    for x, p in pmf.Items():
+        new_pmf.Mult(x, x)
+        
+    new_pmf.Normalize()
+    return new_pmf
+```
+
+
+***Compute the biased distribution we would see if we surveyed the children and asked them how many children under 18 (including themselves) are in their household.***
+```
+biased = BiasPmf(pmf, label='biased')
+```
+
+
+***Plot the actual and biased distributions, and compute their means***
+
+```
+thinkplot.PrePlot(2)
+thinkplot.Pmfs([pmf, biased])
+thinkplot.Config(xlabel='Number of children', ylabel='PMF')
+```
+
+
+***Compute their means***
+```
+pmf.Mean()
+biased.Mean()
+```
+
+1.024205155043831
+
+2.403679100664282
+
 ### Q3. [Think Stats Chapter 4 Exercise 2](4-2-random_dist.md) (random distribution)  
 This questions asks you to examine the function that produces random numbers.  Is it really random?  A good way to test that is to examine the pmf and cdf of the list of random numbers and visualize the distribution.  If you're not sure what pmf is, read more about it in Chapter 3.  
 
