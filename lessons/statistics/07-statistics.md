@@ -196,9 +196,9 @@ pmf.Mean()
 biased.Mean()
 ```
 
-1.024205155043831
+-  ***the mean of actual distribution : 1.024205155043831***
 
-2.403679100664282
+-  ***the mean of biased distribution : 2.403679100664282***
 
 
 
