@@ -297,7 +297,6 @@ high = dist.cdf(cm2)
 range_height = high - low
 high, low , range_height
 ```
-
 `>> 0.48963902786483265, 0.8317337108107857, 0.3420946829459531`
 
 - ***The percentage of the U.S. male population is below  5'10":*** `48.96%`
