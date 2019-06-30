@@ -176,7 +176,29 @@ def BiasPmf(pmf, label):
 
 
 
+***Compute the biased distribution we would see if we surveyed the children and asked them how many children under 18 (including themselves) are in their household.***
+```
+biased = BiasPmf(pmf, label='biased')
+```
 
+
+***Plot the actual and biased distributions, and compute their means***
+```
+thinkplot.PrePlot(2)
+thinkplot.Pmfs([pmf, biased])
+thinkplot.Config(xlabel='Number of children', ylabel='PMF')
+```
+
+
+***Compute their means***
+```
+pmf.Mean()
+biased.Mean()
+```
+
+1.024205155043831
+
+2.403679100664282
 
 
 
