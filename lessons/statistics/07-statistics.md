@@ -118,7 +118,8 @@ How do frequentist and Bayesian statistics compare?
 
 ```math
 \sqrt{3x-1}+(1+x)^2
-``
+```
+
 Bayesian | Frequentist
 ------------ | -------------
 uses probability for both hypotheses $$\mathbb{H} $$ and data $`\mathbb{D}`$ (prior $`P(\mathbb{H})`$ and posterior $`P(\mathbb{H} | \mathbb{D})`$) | never uses the probability of a hypothesis
