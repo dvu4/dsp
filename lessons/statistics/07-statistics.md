@@ -87,21 +87,21 @@ Bayes' Theorem is an important tool in understanding what we really know, given 
 Elvis Presley had a twin brother who died at birth.  What is the probability that Elvis was an identical twin? Assume we observe the following probabilities in the population: fraternal twin is 1/125 and identical twin is 1/300.  
 
 
->> In 3000 births, we have 3000 * (1/300) = 10 sets of identical twins. Half of those would be girls (girl-girl twin), other half would be boys (boy-boy twin). So we have 5 sets of boy-boy identical twins 
+In 3000 births, we have 3000 * (1/300) = 10 sets of identical twins. Half of those would be girls (girl-girl twin), other half would be boys (boy-boy twin). So we have 5 sets of boy-boy identical twins 
 
->> In 3000 births, we have 3000 * (1/125) = 24 sets of fraternal twins. 1/4 would be girl-girl, 1/4 would be girl-boy, 1/4 would be boy-girl and 1/4 would be boy-boy. So we have 24 * (1/4) = 6 sets of boy-boy fraternal twins.
+In 3000 births, we have 3000 * (1/125) = 24 sets of fraternal twins. 1/4 would be girl-girl, 1/4 would be girl-boy, 1/4 would be boy-girl and 1/4 would be boy-boy. So we have 24 * (1/4) = 6 sets of boy-boy fraternal twins.
 
->> Therefore, out of 3000 births, 5 out of 11 sets of boy-boy twins would be identical. So the probability Elvis was an identical twin is 5/1
+Therefore, out of 3000 births, 5 out of 11 sets of boy-boy twins would be identical. So the probability Elvis was an identical twin is 5/1
 
->> Calculate the unconditional probabilities
+Calculate the unconditional probabilities
 
->> P[identical twins & brother twin] = P[identical twins] * P[brother twin | identical twins] = 1/300 * 1/2 
+P[identical twins & brother twin] = P[identical twins] * P[brother twin | identical twins] = 1/300 * 1/2 
 
->> P[fraternal twins & brother twin] = P[fraternal twins] * P[brother twin | identical twins] = 1/125 * 1/4
+P[fraternal twins & brother twin] = P[fraternal twins] * P[brother twin | identical twins] = 1/125 * 1/4
 
->> P[brother twin] = P[identical twins & brother twin]  +  P[fraternal twins & brother twin] = 1/600 + 1/500
+P[brother twin] = P[identical twins & brother twin]  +  P[fraternal twins & brother twin] = 1/600 + 1/500
 
->> $P[identical twins | brother twin] = P[identical twins & brother twin] \over {P[brother twin]}  = {1/600} \over { 1/600 + 1/500} = 5/11$
+$P[identical twins | brother twin] = P[identical twins & brother twin] \over {P[brother twin]}  = {1/600} \over { 1/600 + 1/500} = 5/11$
 
 ---
 
@@ -111,7 +111,7 @@ boy
 
 
 
->>  Bayesian | Frequentist
+Bayesian | Frequentist
 ------------ | -------------
 uses probability for both hypotheses $ \mathbb{H} $ and data $ \mathbb{D} $ (prior $P(\mathbb{H})$ and posterior $P(\mathbb{H} | \mathbb{D})$) | never uses the probability of a hypothesis
 
