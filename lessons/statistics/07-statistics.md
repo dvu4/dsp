@@ -120,7 +120,10 @@ P[identical twins | brother twin] = P[identical twins & brother twin] / P[brothe
 ### Q6. Bayesian &amp; Frequentist Comparison  
 How do frequentist and Bayesian statistics compare?
 
+$x<em>{i} + y</em>{i}$
+
 $P(D \mid H)$ 
+$P(D \given H)$ 
 
 Bayesian | Frequentist
 ------------ | -------------
