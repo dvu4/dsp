@@ -110,8 +110,7 @@ P[brother twin] = P[identical twins & brother twin]  +  P[fraternal twins & brot
 ```
 
 ```math
-P[identical twins | brother twin] = P[identical twins & brother twin] / {P[brother twin]}  
-= (1/600) / ( 1/600 + 1/500) = 5/11
+P[identical twins | brother twin] = P[identical twins & brother twin] / P[brother twin] = (1/600) / ( 1/600 + 1/500) = 5/11
 ```
 
 
