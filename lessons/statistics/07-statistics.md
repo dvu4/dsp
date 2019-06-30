@@ -114,11 +114,8 @@ boy
 Bayesian | Frequentist
 ------------ | -------------
 uses probability for both hypotheses $ \mathbb{H} $ and data $ \mathbb{D} $ (prior $P(\mathbb{H})$ and posterior $P(\mathbb{H} | \mathbb{D})$) | never uses the probability of a hypothesis
-
 depends on the prior and likelihood of observed data | depends on the likelihood $P(\mathbb{D} | \mathbb{H})$ for both observed and unobserved data
-
 requires  one to know or construct a 'subjective prior' | does not require a prior
-
 may be computationally intensive due to integration over many parameters  | tends to less computationally intensive
 
 choice of the data model + prior distribution + objectivity + data + endless argument about one thing | choice of the data model + sample space and how repetitions of the experiment are envisioned, choice of stop rule. 1-tailed vs 2-tailed tests, multiplicity adjustments + objectivity + data + endless argument about everything
