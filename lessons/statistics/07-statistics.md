@@ -100,11 +100,17 @@ Elvis Presley had a twin brother who died at birth.  What is the probability tha
 ```math
 
 P[identical twins & brother twin] = P[identical twins] * P[brother twin | identical twins] = 1/300 * 1/2 
+```
 
+```math
 P[fraternal twins & brother twin] = P[fraternal twins] * P[brother twin | identical twins] = 1/125 * 1/4
+```
 
+```math
 P[brother twin] = P[identical twins & brother twin]  +  P[fraternal twins & brother twin] = 1/600 + 1/500
+```
 
+```math
 P[identical twins | brother twin] = P[identical twins & brother twin] \over {P[brother twin]}  
 = {1/600} \over { 1/600 + 1/500} = 5/11
 ```
