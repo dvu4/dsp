@@ -271,7 +271,7 @@ print('the mean is {} and standard deviation is {}'.format(dist.mean(), dist.std
 ```
 
 
-***Convert feet to centimeter: *** `cm = feet/0.0328 + inch/0.3937`
+***Convert feet to centimeter:*** `cm = feet/0.0328 + inch/0.3937`
 ```
 # 5'10"
 f1 = 5
@@ -295,13 +295,13 @@ range_height = high - low
 high, low , range_height
 ```
 
-0.48963902786483265, 0.8317337108107857, 0.3420946829459531
+`>> 0.48963902786483265, 0.8317337108107857, 0.3420946829459531`
 
-- ***The percentage of the U.S. male population is below  5'10":** `48.96%`
-- ***The percentage of the U.S. male population is below 6'1":** `83.17%`
+- ***The percentage of the U.S. male population is below  5'10":*** `48.96%`
+- ***The percentage of the U.S. male population is below 6'1":*** `83.17%`
 
 
-- ***The percentage of the U.S. male population is in this range 5'10" and 6'1":** `34.2%`
+- ***The percentage of the U.S. male population is in this range 5'10" and 6'1":*** `34.2%`
 
 
 ### Q5. Bayesian (Elvis Presley twin) 
