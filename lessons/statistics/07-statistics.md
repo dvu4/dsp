@@ -112,11 +112,11 @@ P[identical twins | brother twin] = P[identical twins & brother twin] \over {P[b
 
 
 ---
-<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML' async></script>
+
 ### Q6. Bayesian &amp; Frequentist Comparison  
 How do frequentist and Bayesian statistics compare?
 
-$P(\mathbb{H})$
+
 
 Bayesian | Frequentist
 ------------ | -------------
