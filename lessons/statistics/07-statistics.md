@@ -101,6 +101,11 @@ P[fraternal twins & brother twin] = P[fraternal twins] * P[brother twin | identi
 
 P[brother twin] = P[identical twins & brother twin]  +  P[fraternal twins & brother twin] = 1/600 + 1/500
 
+
+```math
+P[identical twins | brother twin] = P[identical twins & brother twin] \over {P[brother twin]}  = {1/600} \over { 1/600 + 1/500} = 5/11
+```
+
 $$P[identical twins | brother twin] = P[identical twins & brother twin] \over {P[brother twin]}  = {1/600} \over { 1/600 + 1/500} = 5/11$$
 
 ---
