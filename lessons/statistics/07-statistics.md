@@ -209,6 +209,46 @@ biased.Mean()
 ### Q3. [Think Stats Chapter 4 Exercise 2](4-2-random_dist.md) (random distribution)  
 This questions asks you to examine the function that produces random numbers.  Is it really random?  A good way to test that is to examine the pmf and cdf of the list of random numbers and visualize the distribution.  If you're not sure what pmf is, read more about it in Chapter 3.  
 
+
+***Import library***
+```
+from __future__ import print_function, division
+%matplotlib inline
+import numpy as np
+import nsfg
+import first
+import thinkstats2
+import thinkplot
+```
+
+
+***Generate 1000 numbers from random.random  (uniform between 0 and 1)***
+```
+rdn_num = np.random.random(1000)
+```
+
+
+
+***Plot the PMF. The distribution uniform***
+```
+pmf = thinkstats2.Pmf(rdn_num , label='random_number')
+thinkplot.Pmf(pmf)
+thinkplot.Config(xlabel='Random variate', ylabel='PMF')
+```
+<img src='image/random.png'>
+
+
+***Plot the CDF. The distribution uniform***
+
+```
+cdf = thinkstats2.Cdf(rdn_num)
+thinkplot.Cdf(cdf)
+thinkplot.Config(xlabel='Random variate', ylabel='CDF')
+```
+
+<img src='image/random_cdf.png'>
+
+
 ### Q4. [Think Stats Chapter 5 Exercise 1](5-1-blue_men.md) (normal distribution of blue men)
 This is a classic example of hypothesis testing using the normal distribution.  The effect size used here is the Z-statistic. 
 
